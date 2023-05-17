@@ -36,7 +36,15 @@ ul {
   margin-right:  auto;
   margin-left:  auto;
   outline: 1px solid #31b769;
+  display: flex;
+
 }
+.c-hero{
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+}
+
 
 /* .show-for-index {
   position: absolute;
@@ -87,6 +95,15 @@ body {
 }
 
 /** -------------HEADER---------------- */
+.c-header{
+  min-height: 72px;
+}
+.header-navi{
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -94,13 +111,26 @@ body {
   font-size: 18px;
   line-height: 1.17;
   color: var(--iris);
-  /* align-items: center; */
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-logo-studio {
   color: var(--navybluemodal);
+}
+.header-bar{
+  display: flex;
+  padding: 0;
+  margin-left: 72px;
+  margin-top: 24px;
+}
+.header-link-item{
+  margin-left: 40px;
+}
+.header-link-item:first-child{
+  margin: 0;
 }
 
 .header-link {
@@ -110,6 +140,20 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navybluemodal);
+ 
+  
+}
+.header-address-list{
+  display: flex;
+  padding: 0;
+  margin-top: 24px;
+  margin-left: 332px;
+}
+.header-address-item{
+  margin-left: 40px;
+}
+.header-address-item:first-child{
+  margin: 0;
 }
 .header-address {
   font-style: normal;
@@ -122,7 +166,10 @@ body {
 /** -------------HERO---------------- */
 .hero {
   background-color: var(--navybluemodal);
+
 }
+
+
 .hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -130,14 +177,17 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
+  display: flex;
   box-sizing: border-box;
   width: 496px;
   height: 120px;
-  
+  margin-left: calc(472px - 156px) ;
+  margin-top: 188px ;
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -145,9 +195,28 @@ body {
   color: var(--white);
   cursor: pointer;
   background: var(--iris);
+  display: flex;
+  width: 169px;
+  height: 56px;
+padding: 0;
+margin-top: 48px;
+margin-left:calc(636px - 156px);
+border-radius: 4px;
+padding: 12px 30px;
+
+
+  /* position: absolute;
+width: 169px;
+height: 56px;
+left: 636px;
+top: 428px; */
+
+
+
 }
 
 /** -------------FEATURES---------------- */
+
 
 .features-list-title {
   font-family: "Roboto", sans-serif;
@@ -157,6 +226,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--navybluemodal);
 }
+
 .features-list-text {
   font-family: "Roboto";
   font-weight: 400;
