@@ -1,3 +1,11 @@
+h1,h2,h3,h4,h5,h6,p,il,ol{
+  margin: 0;
+}
+img{
+  display: block;
+}
+
+
 :root
 {
  --ocean:#404BBF;--iris:#4D5AE5;--navyblue:#2F2F42;
@@ -6,17 +14,6 @@
  --grey:#808080;--white:#FFFFFF;--dairy:#FCFCFC;
 }
 
-/* .show-for-index {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-} */
 
 .link{text-decoration: none;}
 .list{list-style: none;}
@@ -36,6 +33,19 @@ font-family:"Roboto",sans-serif;
 color:var(--slate);background-color: var(--white);}
 
   /** -------------HEADER---------------- */
+  .header-contr{
+    display: flex;
+    align-items: center;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+  }
+  .header-navi{
+    display: flex;
+    align-items: center;
+   
+  }
 
 .header-logo {
   font-family: "Raleway",sans-serif;
@@ -50,6 +60,17 @@ color:var(--slate);background-color: var(--white);}
 .header-logo-studio {
   color:var(--navybluemodal);
 }
+.header-bar{
+display: flex;
+align-items: center;
+margin-left: 76px;
+margin-top: 24px;
+margin-bottom: 24px;
+
+padding: 0;
+gap: 40px;
+  
+}
 
 .header-link {
   font-family:"Roboto",sans-serif;
@@ -58,20 +79,44 @@ color:var(--slate);background-color: var(--white);}
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:var(--navybluemodal);
+  
 }
+.header-adrs{
+  display: flex;
+  align-items: center;
+  margin-left: 332px;
+  
+}
+.header-address-list{
+  display: flex;
+  padding: 0;
+  gap: 40px;
+}
+
 .header-address{
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:var(--slate);
+  
 }
 
 
 
 /** -------------HERO---------------- */
 .hero {
+  height: 600px;
   background-color:var(--navybluemodal);
+}
+.hero-cntr{
+  display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  flex-direction: column;
+  outline: 1px solid red;
+
 }
 .hero-title {
   font-family: "Roboto",sans-serif;
@@ -81,6 +126,11 @@ color:var(--slate);background-color: var(--white);}
   text-align: center;
   letter-spacing: 0.02em;
   color:var(--white);
+  width: 496px;
+  height: 120px;
+  margin-left: 316px;
+  margin-top: 188px;
+  margin-right: 316px;
 }
 .hero-btn {
   font-family: "Roboto",sans-serif;
@@ -92,12 +142,31 @@ color:var(--slate);background-color: var(--white);}
   color:var(--white);
   cursor: pointer;
   background:var(--iris);
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-left: 480px;
+  margin-right: 480px;
+  margin-bottom: 188px;
 }
 
 
 /** -------------FEATURES---------------- */
 
-
+.features-cntr{
+  display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+.features-list{
+  display: flex;
+  padding: 0;
+  margin: 120px 0;
+  gap: 24px;
+}
 
 .features-list-title {
   font-family: "Roboto",sans-serif;
@@ -106,6 +175,7 @@ color:var(--slate);background-color: var(--white);}
   line-height: 1.2;
   letter-spacing: 0.02em;
   color:var(--navybluemodal);
+  margin-bottom: 8px;
 }
 .features-list-text {
   font-family: "Roboto";
@@ -117,6 +187,16 @@ color:var(--slate);background-color: var(--white);}
 }
 
 /** -------------OURJOB---------------- */
+.ourjob-cntr{
+  display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  flex-direction: column;
+
+}
+
 .ourjob-title {
   font-family: "Roboto",sans-serif;
   font-style: normal;
@@ -127,6 +207,18 @@ color:var(--slate);background-color: var(--white);}
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color:var(--navybluemodal);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+.ourjob-list{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content:space-between ;
+  margin-bottom: 120px;
+
+
 }
 
 /** -------------OURTEAM---------------- */
@@ -230,3 +322,17 @@ color:var(--cloud);
   letter-spacing: 0.02em;
   color:var(--slate);
 }
+
+
+/* .show-for-index {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+} */
+
