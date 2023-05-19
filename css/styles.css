@@ -33,13 +33,16 @@ font-family:"Roboto",sans-serif;
 color:var(--slate);background-color: var(--white);}
 
   /** -------------HEADER---------------- */
+  .header{
+    border-bottom: 1px solid var(--cornflower) 
+  }
   .header-contr{
     display: flex;
     align-items: center;
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    border-bottom: 1px solid var(--cornflower);
+    /* border-bottom: 1px solid var(--cornflower); */
   }
   .header-navi{
     display: flex;
@@ -80,6 +83,7 @@ gap: 40px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:var(--navybluemodal);
+  padding: 24px 0;
   
 }
 .header-adrs{
@@ -90,7 +94,7 @@ gap: 40px;
 }
 .header-address-list{
   display: flex;
-  padding: 24px 0 ;
+  padding: 0 ;
   gap: 40px;
 }
 
