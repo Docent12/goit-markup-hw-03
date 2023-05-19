@@ -202,6 +202,9 @@ gap: 40px;
 }
 
 /** -------------OURJOB---------------- */
+.ourjob{
+  padding-bottom: 120px;
+}
 .ourjob-cntr{
   display: flex;
   width: 1158px;
@@ -231,7 +234,8 @@ gap: 40px;
   padding: 0;
   margin: 0;
   justify-content:space-between ;
-  margin-bottom: 120px;
+  gap: 24px;
+  /* margin-bottom: 120px; */
 
 
 }
