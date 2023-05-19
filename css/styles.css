@@ -113,7 +113,7 @@ gap: 40px;
 .hero {
   height: 600px;
   background-color:var(--navybluemodal);
-  padding: 188px 0;
+  padding: 188px 0; 
 }
 .hero-cntr{
   display: flex;
@@ -135,7 +135,7 @@ gap: 40px;
   max-width: 496px;
   height: 120px;
   margin-left: 316px;
-  margin-top: 188px;
+  /* margin-top: 188px; */
   margin-right: 316px;
 }
 .hero-btn {
@@ -155,24 +155,32 @@ gap: 40px;
   margin-top: 48px;
   margin-left: 480px;
   margin-right: 480px;
-  /* margin-bottom: 188px; */
+  margin-bottom: 188px;
 }
 
 
 /** -------------FEATURES---------------- */
+
+.features{
+  padding: 120px 0; 
+}
 
 .features-cntr{
   display: flex;
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .features-list{
   display: flex;
   padding: 0;
-  margin: 120px 0;
+  margin: 0;
   gap: 24px;
+}
+/**--------fix------- */
+.features-list-item{
+  flex-basis: calc((100% - 3 * 24px) / 4) ;
 }
 
 .features-list-title {
