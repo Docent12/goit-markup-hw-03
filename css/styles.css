@@ -242,7 +242,16 @@ gap: 40px;
 
 /** -------------OURTEAM---------------- */
 .ourteam{background-color: var(--cloud);
+ 
   padding: 120px 0;
+}
+.cntr-ourteam{
+  display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  flex-direction: column;
+  /* outline: 1px solid red; */
 }
 
 .ourteam-title {
@@ -256,13 +265,15 @@ gap: 40px;
   color:var(--navybluemodal);
   margin-bottom: 72px; 
 }
-.oueteam-list{
+.ourteam-list{
   list-style: none;
   display: flex; 
-  gap: 24px; 
+  gap: 24px;
+  padding: 0;
+  margin: 0; 
 }
 
-.oueteam-list-item{
+.ourteam-list-item{
   background-color:var(--white); 
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
@@ -272,7 +283,7 @@ gap: 40px;
 }
 
 
-.oueteam-list-name {
+.ourteam-list-name {
   font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -283,7 +294,7 @@ gap: 40px;
   text-align: center;
   margin-bottom: 8px;
 }
-.oueteam-list-jobtitle {
+.ourteam-list-jobtitle {
   font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -300,6 +311,15 @@ gap: 40px;
   background:var(--navybluemodal);
   padding: 100px 0;
 }
+
+.cntr-footer{
+  display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  flex-direction: column;
+  /* outline: 1px solid red; */
+}
 .footer-logo {
   font-family: "Raleway",sans-serif;
   font-weight: 800;
@@ -309,6 +329,8 @@ gap: 40px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  display: inline-block; 
+margin-bottom: 16px;
 }
 
 .footer-logo-studio {
@@ -322,8 +344,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--cloud);
-display: inline-block; 
-margin-bottom: 16px;
+max-width: 264px;
+
 }
 
 /* *-----------Portfolio BTN---------- */
