@@ -241,7 +241,9 @@ gap: 40px;
 }
 
 /** -------------OURTEAM---------------- */
-.ourteam{background-color: var(--cloud);}
+.ourteam{background-color: var(--cloud);
+  padding: 120px 0;
+}
 
 .ourteam-title {
   font-family: "Roboto",sans-serif;
@@ -252,13 +254,21 @@ gap: 40px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color:var(--navybluemodal);
+  margin-bottom: 72px; 
 }
 .oueteam-list{
   list-style: none;
+  display: flex; 
+  gap: 24px; 
 }
 
 .oueteam-list-item{
   background-color:var(--white); 
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.namestatus{
+  padding: 32px 16px;
 }
 
 
@@ -270,6 +280,8 @@ gap: 40px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color:var(--navybluemodal);
+  text-align: center;
+  margin-bottom: 8px;
 }
 .oueteam-list-jobtitle {
   font-family: "Roboto",sans-serif;
@@ -279,12 +291,14 @@ gap: 40px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:var(--slate);
+  text-align: center; 
 }
 
 
 /** -------------FOOTER---------------- */
 .footer{
   background:var(--navybluemodal);
+  padding: 100px 0;
 }
 .footer-logo {
   font-family: "Raleway",sans-serif;
@@ -308,6 +322,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--cloud);
+display: inline-block; 
+margin-bottom: 16px;
 }
 
 /* *-----------Portfolio BTN---------- */
