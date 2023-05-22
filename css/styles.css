@@ -190,6 +190,19 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+/**====== Hidden title ===== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+} 
+
 .features-list {
   display: flex;
   padding: 0;
@@ -332,6 +345,7 @@ body {
 
 .footer-logo {
   display: inline-block;
+  width: 120px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -340,6 +354,7 @@ body {
   text-transform: uppercase;
   color: var(--iris);
   margin-bottom: 16px;
+  /* border: 1px solid black; */
 }
 
 .footer-logo-studio {
