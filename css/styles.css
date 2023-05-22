@@ -344,7 +344,6 @@ body {
 
 .footer-logo-studio {
   color: var(--cloud);
-  display: inline-block;
 }
 .footer-text {
   font-family: "Roboto", sans-serif;
